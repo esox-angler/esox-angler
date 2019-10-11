@@ -1,0 +1,129 @@
+﻿<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2a2b13;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4e662c;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+</style>
+</head>
+
+<div class="topnav">
+  		<a href="Saskatchewan Master Angler Program.htm" class="left">Saskatchewan Master Angler</a>
+		<div class="topnav-right">
+        <a href="Signup Form.htm" class="right">Log in</a>
+    	<a href="Submission Form.htm" class="active , right">Submit Catch</a>
+        <a href="Submission Form.htm" class="right">Record Book</a>
+        </div>
+</div>
+
+  <form action="action_page.php">
+
+<div class="col-container">
+	 <div class="col" style="background:#C6D6CC">
+    <p><label for="fname">First</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <p><label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <p><label for="lakeorwaterbody">Lake or Waterbody</label>
+    <input type="text" id="lakeorwaterbody" name="Lake or Waterbody" placeholder="Where was the fish caught?">
+
+    <p><label for="Fish Released">Fish Released</label>
+    <select id="Fish Released" name="Fish Released">
+      <option value="Released">Released</option>
+      <option value="Keep">Keep</option>
+    </select>
+    </div>
+
+	 <div class="col" style="background:#C6D6CC">
+	<p><label for="Species">Fish Species</label>
+    <select id="Fish Species" name="Fish Species">
+      <option value="Arctic Grayling">Arctic Grayling</option>
+      <option value="Bigmouth Buffalo">Bigmouth Buffalo</option>
+      <option value="Brook Trout">Brook Trout</option>
+      <option value="Brown Trout">Brown Trout</option>
+      <option value="Bullhead">Bullhead</option>
+      <option value="Burbot">Burbot</option>
+      <option value="Channel Catfish">Channel Catfish</option>
+      <option value="Cisco">Cisco</option>
+      <option value="Common Carp">Common Carp</option>
+      <option value="Goldeye">Goldeye</option>
+      <option value="Lake Sturgeon">Lake Sturgeon</option>
+      <option value="Lake Trout">Lake Trout</option>
+      <option value="Lake Whitefish">Lake Whitefish</option>
+      <option value="Largemouth Bass">Largemouth Bass</option>
+      <option value="Longnose Sucker">Longnose Sucker</option>
+      <option value="Mooneye">Mooneye</option>
+      <option value="Northern Pike">Northern Pike</option>
+      <option value="Quillback">Quillback</option>
+      <option value="Rainbow Trout">Rainbow Trout</option>
+      <option value="Rock Bass">Rock Bass</option>
+      <option value="Sauger">Sauger</option>
+      <option value="Shorthead Redhorse">Shorthead Redhorse</option>
+      <option value="Silver Redhorse">Silver Redhorse</option>
+      <option value="Smallmouth Bass">Smallmouth Bass</option>
+      <option value="Splake">Splake</option>
+      <option value="Tiger Trout">Tiger Trout</option>
+      <option value="Yellow Perch">Yellow Perch</option>
+      <option value="Walleye">Walleye</option>
+      <option value="White Sucker">White Sucker</option>
+    </select>
+    
+    <p><form action="/action_page.php">
+  	<input type="file" name="pic" accept="image/*">
+  	<input type="submit">
+    </form>
+
+    <p><form action="/action_page.php">
+    <p><label for="Date Caught">Date Caught</label>
+    <input type="date" name="Date Caught">
+  	<input type="submit">
+    </div>
+    </form>
+</div>
+
+    <p><input type="submit" value="Submit">
+ 
+	</p>
+  </form>
+</div>
+
+</body>
+</html>
